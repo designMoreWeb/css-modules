@@ -4,4 +4,13 @@ module.exports = {
     path: 'build',
     filename: 'bundle.js',
   },
+  module: {
+    loaders: [
+      {
+        test: /\.js/,
+        loader:'babel',
+        include:__dirname + '/src',
+      }
+    ],
+  }
 };
