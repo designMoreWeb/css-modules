@@ -10,6 +10,11 @@ module.exports = {
         test: /\.js/,
         loader:'babel-loader',
         include:__dirname + '/src',
+      },
+      {
+        test:/\.css/,
+        loaders: ['style-loader', 'css-loader'],
+        include: __dirname +'/src'
       }
     ],
   }
