@@ -5,10 +5,10 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js/,
-        loader:'babel',
+        loader:'babel-loader',
         include:__dirname + '/src',
       }
     ],

@@ -63,14 +63,39 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: Error: The node API for `babel` has been moved to `babel-core`.\n    at Object.<anonymous> (/Users/Divster/node_modules/babel/index.js:1:69)\n    at Module._compile (module.js:570:32)\n    at Object.Module._extensions..js (module.js:579:10)\n    at Module.load (module.js:487:32)\n    at tryModuleLoad (module.js:446:12)\n    at Function.Module._load (module.js:438:3)\n    at Module.require (module.js:497:17)\n    at require (internal/module.js:20:19)\n    at loadLoader (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/loader-runner/lib/loadLoader.js:13:17)\n    at iteratePitchingLoaders (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at runLoaders (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/loader-runner/lib/LoaderRunner.js:362:2)\n    at NormalModule.doBuild (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/NormalModule.js:129:2)\n    at NormalModule.build (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/NormalModule.js:180:15)\n    at Compilation.buildModule (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/Compilation.js:142:10)\n    at moduleFactory.create (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/Compilation.js:424:9)\n    at /Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/NormalModuleFactory.js:242:4\n    at /Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/NormalModuleFactory.js:93:13\n    at /Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/tapable/lib/Tapable.js:204:11\n    at NormalModuleFactory.params.normalModuleFactory.plugin (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/CompatibilityPlugin.js:52:5)\n    at NormalModuleFactory.applyPluginsAsyncWaterfall (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/tapable/lib/Tapable.js:208:13)\n    at onDoneResolving (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/NormalModuleFactory.js:68:11)\n    at onDoneResolving (/Users/Divster/Desktop/Web Dev/ReactJS/cssModules/node_modules/webpack/lib/NormalModuleFactory.js:189:6)\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var greetings = function greetings(text, person) {
+  return text + ", " + person + ". I read you but I\u2019m sorry, I\u2019m afraid I can\u2019t do that.";
+};
+
+exports.default = greetings;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _alert = __webpack_require__(0);
+
+var _alert2 = _interopRequireDefault(_alert);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+document.write((0, _alert2.default)("Affirmative", "Dave"));
 
 /***/ })
 /******/ ]);
